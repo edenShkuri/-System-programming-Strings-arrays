@@ -15,4 +15,4 @@ txtfind.o: txtfind.c
 .PHONY: clean all
 
 clean: 
-	rm *.o -f mains
+	rm *.o -f isort txtfind
