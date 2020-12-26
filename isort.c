@@ -24,8 +24,9 @@ void insertion_sort(int* arr , int len){
 int main(){
 int arr[n];
 printf("enter %d numbers\n", n);
-for(int i=0; i<n; i++)
-  scanf(" %d", (arr+i));
+fgets(arr, n , stdin);
+// for(int i=0; i<n; i++)
+//   scanf(" %d", (arr+i));
 insertion_sort(arr,n);
 for(int i=0; i<n-1; i++)
 printf("%d,",*(arr+i));
