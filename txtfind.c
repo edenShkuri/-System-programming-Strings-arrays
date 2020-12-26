@@ -21,8 +21,8 @@ int isSimilar(char w1[],int s1, char w2[], int s2)
     }
      if(ans==0)
         return 0; 
+ }
  return 1;
-}
 }   
 
 void optA(char line[], char word[]){
@@ -31,10 +31,11 @@ void optA(char line[], char word[]){
 }
 
 void optB(char line[], char word[], int Wsize){
+    char w[WORD];
  for(int i=0; i<strlen(line); i++){
-     char w[WORD];
+    
   int j=0;
-   while(line[i]!=' ' && line[i]!='\t' && line[i]!='\n')
+   while(line[i]!=' ' && line[i]!='\t' && line[i]!='\n' && line[i]!='\r')
   {
    w[j]=line[i];
    j++;
