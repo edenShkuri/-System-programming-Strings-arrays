@@ -1,10 +1,10 @@
-all:mainIsort mainTxt
+all:isort txtfind
 
-mainIsort: isort.o
-	gcc -Wall isort.o -o mainIsort
+isort: isort.o
+	gcc -Wall isort.o -o isort
 
-mainTxt: txtfind.o
-	gcc -Wall txtfind.o -o mainTxt
+txtfind: txtfind.o
+	gcc -Wall txtfind.o -o txtfind
 
 isort.o: isort.c
 	gcc -Wall -c isort.c -o isort.o
